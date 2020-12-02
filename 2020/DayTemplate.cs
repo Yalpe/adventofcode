@@ -8,7 +8,7 @@ namespace AdventOfCode2020
     {
         public DayTemplate()
         {
-            PuzzleInput.Fetch(1);
+            //PuzzleInput.Fetch(1);
         }
         
         public void SolveExamplesPartOne()
