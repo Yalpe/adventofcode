@@ -6,7 +6,7 @@ namespace AdventOfCode2020
     {
         static void Main(string[] args)
         {
-            var day = new Day5();
+            var day = new Day6();
 
             day.SolveExamplesPartOne();
             day.SolvePartOne();
