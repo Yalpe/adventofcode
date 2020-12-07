@@ -6,11 +6,6 @@ namespace AdventOfCode2020
 {
     public class DayTemplate
     {
-        public DayTemplate()
-        {
-            //PuzzleInput.Fetch(1);
-        }
-        
         public void SolveExamplesPartOne()
         {
             Console.WriteLine("Part one examples:");
