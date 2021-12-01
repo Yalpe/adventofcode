@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace AdventOfCode2020
+namespace AdventOfCode
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var day = new Day10();
+            var day = new Day1();
 
             day.SolveExamplesPartOne();
             day.SolvePartOne();
