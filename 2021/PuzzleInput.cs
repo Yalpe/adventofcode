@@ -11,7 +11,7 @@ namespace AdventOfCode
 		{
 			var uri = $"https://adventofcode.com/2021/day/{day}/input";
 			var client = new WebClient();
-			client.Headers.Add(HttpRequestHeader.Cookie, "session=53616c7465645f5f9ee138fd51fd78e92f206a44aa6a18cee7372fea8bc0d5ad"); 
+			client.Headers.Add(HttpRequestHeader.Cookie, "session=53616c7465645f5f82cc00fba7243bf0d3ae7a96384b1ceb08b9c71cb5e9e7e0"); 
 			
             return Encoding.ASCII.GetString(client.DownloadData(uri))
                 .Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None)
@@ -22,7 +22,7 @@ namespace AdventOfCode
 		{
 			var uri = $"https://adventofcode.com/2021/day/{day}/input";
 			var client = new WebClient();
-			client.Headers.Add(HttpRequestHeader.Cookie, "session=53616c7465645f5f9ee138fd51fd78e92f206a44aa6a18cee7372fea8bc0d5ad"); 
+			client.Headers.Add(HttpRequestHeader.Cookie, "session=53616c7465645f5f82cc00fba7243bf0d3ae7a96384b1ceb08b9c71cb5e9e7e0"); 
 			
             return Encoding.ASCII.GetString(client.DownloadData(uri))
                 .Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None)
