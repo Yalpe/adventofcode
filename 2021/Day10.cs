@@ -38,8 +38,9 @@ namespace AdventOfCode
 
         private void Solve(string[] data)
         {
-            var openToCloseMap = new Dictionary<char, char>() { { '<', '>' }, { '[', ']' }, { '{', '}' }, { '(', ')' } };
+            var autoCompleteChunkScores = new Dictionary<char, long>() { { '>', 4 }, { ']', 2 }, { '}', 3 }, { ')', 1 } };
             var illegalChunkScores = new Dictionary<char, int>() { { '>', 25137 }, { ']', 57 }, { '}', 1197 }, { ')', 3 } };
+            var openToCloseMap = new Dictionary<char, char>() { { '<', '>' }, { '[', ']' }, { '{', '}' }, { '(', ')' } };
             var corruptedScore = 0;
             var lineScores = new List<long>();
             foreach (var line in data)
@@ -65,7 +66,6 @@ namespace AdventOfCode
                 
                 if (!corrupted)
                 {
-                    var autoCompleteChunkScores = new Dictionary<char, long>() { { '>', 4 }, { ']', 2 }, { '}', 3 }, { ')', 1 } };
                     var autoCompleteScore = 0L;
                     foreach (var chunk in chunks)
                     {
