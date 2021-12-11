@@ -86,7 +86,7 @@ namespace AdventOfCode
             }
 
             Console.WriteLine(flashCount);
-            
+
             if (infinite)
             {
                 Console.WriteLine(Math.Abs(steps));
@@ -108,19 +108,6 @@ namespace AdventOfCode
                     }
                 }
             }
-        }
-
-        private void PrintBoard(int[,] map, int width, int height)
-        {
-            for (var x = 0; x < width; ++x)
-            {
-                for (var y = 0; y < height; ++y)
-                {
-                    Console.Write(map[x,y]);
-                }
-                Console.WriteLine();
-            }
-            Console.WriteLine();
         }
     }
 }
